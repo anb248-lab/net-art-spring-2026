@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+  background-color: lightblue;
+  font-family: Arial;
+}
+
+.fun {
+  background-color: yellow;
+}
+
+.big {
+  font-size: 40px;
+}
