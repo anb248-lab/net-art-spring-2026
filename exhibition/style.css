@@ -1,79 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: radial-gradient(circle at top, #1f0036, #000000 70%);
-  color: #ffffff;
-  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  background: #f4f3ef;
+  color: #1a1a1a;
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(90deg, #ff00cc, #3333ff);
-  color: white;
+  background: #111827;
+  color: #f9fafb;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-
-h2 {
-  color: #ff66cc;
-  margin-top: 40px;
-}
-
-.curator {
-  font-size: 1rem;
-  color: #ddd;
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
 }
 
-
-.artwork {
-  margin-bottom: 50px;
-  padding: 20px;
-  border-radius: 15px;
-  background: linear-gradient(145deg, #111, #1f1f2e);
-  border: 2px solid #ff00cc;
-  box-shadow: 0 0 15px rgba(255, 0, 204, 0.5);
-  transition: 0.3s;
+.statement {
+  margin-bottom: 40px;
 }
 
-.artwork:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px rgba(51, 51, 255, 0.8);
+.statement h2 {
+  font-family: "Playfair Display", serif;
+  color: #111827;
 }
 
-.artwork img {
+.grid {
+  display: grid;
+  gap: 25px;
+}
+
+.work {
+  background: white;
+  border: 1px solid #e5e5e5;
+  padding: 18px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.work:hover {
+  transform: translateY(-4px);
+  border-left: 4px solid #3b82f6;
+  background: #fafafa;
+}
+
+.work img {
   width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 15px 0;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.work h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 5px;
+}
+
+.toggle {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.info {
+  display: none;
+  margin-top: 10px;
+  color: #374151;
+  line-height: 1.5;
 }
 
 a {
-  color: #00ffff;
-  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-  color: #ff00cc;
+  text-decoration: underline;
 }
-
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
+  background: #111827;
+  color: #f9fafb;
   margin-top: 40px;
-  font-size: 0.9rem;
-  color: #aaa;
 }
